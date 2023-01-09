@@ -1,18 +1,43 @@
 import 'package:flutter/material.dart';
 
 class Onboard1 extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      color: Color(0xff1483C2),
-      home: Scaffold(),
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: const Color(0xff1483C2),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              alignment: Alignment.center,
+              child: Column(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.symmetric(vertical: 20),
+                    child: const Text(
+                      "WELCOME TO NIKE",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Color(0xffECECEC),
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                  Image.asset("assets/images/scrib-lower.png"),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
 
 class Onboard2 extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return Container();
@@ -20,7 +45,6 @@ class Onboard2 extends StatelessWidget {
 }
 
 class Onboard3 extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return Container();
