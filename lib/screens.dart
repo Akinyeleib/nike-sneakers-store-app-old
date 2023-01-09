@@ -14,7 +14,7 @@ class Nike extends StatelessWidget {
               alignment: Alignment.center,
               child: Column(
                 children: [
-                  Image.asset("assets/images/Vector.png"),
+                  Image.asset("assets/images/white-nike.png"),
                   const Text(
                     "NIKE",
                     style: TextStyle(
