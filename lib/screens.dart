@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+String img = "assets/images";
+
 class Onboard1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -8,7 +10,7 @@ class Onboard1 extends StatelessWidget {
       home: Scaffold(
         backgroundColor: const Color(0xff1483C2),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
               alignment: Alignment.center,
@@ -26,7 +28,18 @@ class Onboard1 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Image.asset("assets/images/scrib-lower.png"),
+                  Image.asset("$img/scrib-lower.png"),
+                ],
+              ),
+            ),
+            Container(
+              child: Column(
+                children: [
+                  Container(
+                    color: Colors.grey,
+                    child: Image.asset("$img/onboard-1-nike.png"),
+                  )
+                  // Image.asset("$img/transparent-nike.png"),
                 ],
               ),
             )
