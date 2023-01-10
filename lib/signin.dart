@@ -41,7 +41,7 @@ class _LogInState extends State<LogIn> {
                     child: Image.asset("$img/back-icon.png"),
                   ),
                   const Text(
-                    "Hello Again",
+                    "Hello Again!",
                     style: TextStyle(
                       fontSize: 30,
                     ),
@@ -59,35 +59,6 @@ class _LogInState extends State<LogIn> {
               ),
               Column(
                 children: [
-                  // name textfield
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          "Your Name",
-                          textAlign: TextAlign.start,
-                        ),
-                        Container(
-                          margin: const EdgeInsets.symmetric(vertical: 10),
-                          child: TextField(
-                            controller: _nameContoller,
-                            decoration: const InputDecoration(
-                              filled: true,
-                              fillColor: Color(0xffF7F7F9),
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(10),
-                                ),
-                              ),
-                              hintText: "xxxxxxxx",
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
                   // email textfield
                   Container(
                     alignment: Alignment.centerLeft,
@@ -160,7 +131,7 @@ class _LogInState extends State<LogIn> {
                         ),
                       ),
                       child: const Text(
-                        "Sign Up",
+                        "Sign In",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,
@@ -189,7 +160,7 @@ class _LogInState extends State<LogIn> {
                             child: Image.asset("$img/google.png"),
                           ),
                           const Text(
-                            "Sign Up With Google",
+                            "Sign In With Google",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Colors.white,
@@ -205,7 +176,7 @@ class _LogInState extends State<LogIn> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    "Already Have Account?",
+                    "New User?",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.grey,
@@ -214,9 +185,9 @@ class _LogInState extends State<LogIn> {
                   InkWell(
                     onTap: () {},
                     child: Container(
-                      margin: const EdgeInsets.only(left: 20),
+                      margin: const EdgeInsets.only(left: 10),
                       child: const Text(
-                        "Log In",
+                        "Create Account",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.black,
