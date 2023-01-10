@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'drawer.dart';
+
+String img = "assets/images";
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -17,100 +21,45 @@ class _HomePageState extends State<HomePage> {
           title: const Text("Home "),
           centerTitle: true,
         ),
-        drawer: Drawer(
-          backgroundColor: Color(0xff1483C2),
-          child: ListView(
-            children: [
-              const UserAccountsDrawerHeader(
-                accountName: Text("first_name last_name"),
-                accountEmail: null,
-                currentAccountPicture: CircleAvatar(
-                  backgroundImage: AssetImage(
-                    // "assets/images/Akinyele-ib.jpg",
-                    "assets/images/onboard-2-nike.png",
+        drawer: SideBar(),
+        body: Container(
+          margin: const EdgeInsets.symmetric(
+            vertical: 10,
+            horizontal: 10,
+          ),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Container(
+                  alignment: Alignment.centerLeft,
+                  child: Image.asset("$img/back-icon.png"),
+                ),
+                Container(
+                  child: Column(
+                    children: [
+                      const Text(
+                        "Register Account",
+                        style: TextStyle(
+                          fontSize: 30,
+                          // fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 25, vertical: 10),
+                        child: const Text(
+                          "Fill Your Details Or Continue With Social Media",
+                          textAlign: TextAlign.center,
+                        ),
+                      )
+                    ],
                   ),
                 ),
-                decoration: BoxDecoration(
-                    // color: Color(0xff1483C2),
-                    ),
-              ),
-              ListTile(
-                leading: const Icon(
-                  Icons.person_outline_sharp,
-                  color: Colors.white,
-                ),
-                title: myText("Profile"),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: const Icon(
-                  Icons.luggage,
-                  color: Colors.white,
-                ),
-                title: myText("My Cart"),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: const Icon(
-                  Icons.favorite_outline,
-                  color: Colors.white,
-                ),
-                title: myText("Favorite"),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: const Icon(
-                  Icons.delivery_dining,
-                  color: Colors.white,
-                ),
-                title: myText("Orders"),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: const Icon(
-                  Icons.notifications_outlined,
-                  color: Colors.white,
-                ),
-                title: myText("Notifications"),
-                onTap: () {},
-              ),
-              ListTile(
-                leading: const Icon(
-                  Icons.settings_outlined,
-                  color: Colors.white,
-                ),
-                title: myText("Settings"),
-                onTap: () {},
-              ),
-              Container(
-                margin: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 20,
-                ),
-                child: const Divider(
-                  color: Colors.white,
-                ),
-              ),
-              ListTile(
-                leading: const Icon(
-                  Icons.exit_to_app,
-                  color: Colors.white,
-                ),
-                title: myText("Sign Out"),
-                onTap: () {},
-              ),
-            ],
+              ],
+            ),
           ),
         ),
-      ),
-    );
-  }
-
-  Text myText(String text) {
-    return Text(
-      text,
-      style: const TextStyle(
-        color: Colors.white,
       ),
     );
   }
