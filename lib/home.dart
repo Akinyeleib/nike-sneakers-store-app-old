@@ -154,6 +154,7 @@ class _HomePageState extends State<HomePage> {
                       child: Container(
                         width: double.infinity,
                         padding: const EdgeInsets.all(15),
+                        margin: const EdgeInsets.only(top: 20),
                         decoration: const BoxDecoration(
                           color: Colors.blue,
                           borderRadius: BorderRadius.all(
@@ -168,7 +169,38 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                    )
+                    ),
+                    InkWell(
+                      onTap: () {},
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(15),
+                        margin: const EdgeInsets.symmetric(vertical: 10),
+                        decoration: const BoxDecoration(
+                          // color: Colors.grey,
+                          color: Color(0xffC1C1C1),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.only(right: 10),
+                              child: Image.asset("$img/google.png"),
+                            ),
+                            const Text(
+                              "Sign Up With Google",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ],
