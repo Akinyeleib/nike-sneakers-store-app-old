@@ -203,6 +203,30 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ],
                 ),
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        "Already Have Account?",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {},
+                        child: const Text(
+                          "Log In",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.black,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
