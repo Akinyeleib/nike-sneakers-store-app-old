@@ -19,8 +19,8 @@ class _SideBarState extends State<SideBar> {
             accountEmail: null,
             currentAccountPicture: CircleAvatar(
               backgroundImage: AssetImage(
-                // "assets/images/Akinyele-ib.jpg",
-                "assets/images/onboard-2-nike.png",
+                "assets/images/smile.png",
+                // "assets/images/akinyele-ib.jpg",
               ),
             ),
             decoration: BoxDecoration(
