@@ -4,14 +4,14 @@ import 'drawer.dart';
 
 String img = "assets/images";
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class Register extends StatefulWidget {
+  const Register({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Register> createState() => _RegisterState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _RegisterState extends State<Register> {
   final TextEditingController _nameContoller = TextEditingController();
   final TextEditingController _emailContoller = TextEditingController();
   final TextEditingController _passwordContoller = TextEditingController();
