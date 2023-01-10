@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -82,6 +80,23 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.white,
                 ),
                 title: myText("Settings"),
+                onTap: () {},
+              ),
+              Container(
+                margin: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 20,
+                ),
+                child: const Divider(
+                  color: Colors.white,
+                ),
+              ),
+              ListTile(
+                leading: const Icon(
+                  Icons.exit_to_app,
+                  color: Colors.white,
+                ),
+                title: myText("Sign Out"),
                 onTap: () {},
               ),
             ],
