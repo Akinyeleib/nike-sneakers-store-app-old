@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'drawer.dart';
+
 String img = "assets/images";
 
 class Onboard1 extends StatelessWidget {
@@ -9,6 +11,7 @@ class Onboard1 extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: const Color(0xff1483C2),
+        drawer: SideBar(),
         body: Column(
           // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -37,9 +40,9 @@ class Onboard1 extends StatelessWidget {
                 children: [
                   Container(
                     color: Colors.grey,
-                    child: Image.asset("$img/onboard-1-nike.png"),
-                  )
-                  // Image.asset("$img/transparent-nike.png"),
+                    // child: Image.asset("$img/onboard-1-nike.png"),
+                  ),
+                  Image.asset("$img/transparent-nike.png"),
                 ],
               ),
             )
