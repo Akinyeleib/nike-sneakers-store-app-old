@@ -12,9 +12,9 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  TextEditingController _nameContoller = TextEditingController();
-  TextEditingController _emailContoller = TextEditingController();
-  TextEditingController _passwordContoller = TextEditingController();
+  final TextEditingController _nameContoller = TextEditingController();
+  final TextEditingController _emailContoller = TextEditingController();
+  final TextEditingController _passwordContoller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
             horizontal: 10,
           ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
                 children: [
