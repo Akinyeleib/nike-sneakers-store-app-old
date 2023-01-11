@@ -36,7 +36,12 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 children: [
                   Container(
                     alignment: Alignment.centerLeft,
-                    child: Image.asset("$img/back-icon.png"),
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Image.asset("$img/back-icon.png"),
+                    ),
                   ),
                   const Text(
                     "ForgotPassword Account",

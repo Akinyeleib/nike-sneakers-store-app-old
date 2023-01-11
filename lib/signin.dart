@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'drawer.dart';
+import 'signup.dart';
 
 String img = "assets/images";
 
@@ -37,7 +38,12 @@ class _LogInState extends State<LogIn> {
                 children: [
                   Container(
                     alignment: Alignment.centerLeft,
-                    child: Image.asset("$img/back-icon.png"),
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Image.asset("$img/back-icon.png"),
+                    ),
                   ),
                   const Text(
                     "Hello Again!",
@@ -182,7 +188,14 @@ class _LogInState extends State<LogIn> {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Register(),
+                        ),
+                      );
+                    },
                     child: Container(
                       margin: const EdgeInsets.only(left: 10),
                       child: const Text(

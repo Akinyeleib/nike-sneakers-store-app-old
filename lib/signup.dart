@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike_sneakers_store_app/signin.dart';
 
 import 'drawer.dart';
 
@@ -43,7 +44,12 @@ class _RegisterState extends State<Register> {
                 children: [
                   Container(
                     alignment: Alignment.centerLeft,
-                    child: Image.asset("$img/back-icon.png"),
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Image.asset("$img/back-icon.png"),
+                    ),
                   ),
                   const Text(
                     "Register Account",
@@ -217,7 +223,14 @@ class _RegisterState extends State<Register> {
                     ),
                   ),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const LogIn(),
+                        ),
+                      );
+                    },
                     child: Container(
                       margin: const EdgeInsets.only(left: 10),
                       child: const Text(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike_sneakers_store_app/signup.dart';
 
 class SideBar extends StatefulWidget {
   const SideBar({super.key});
@@ -19,8 +20,8 @@ class _SideBarState extends State<SideBar> {
             accountEmail: null,
             currentAccountPicture: CircleAvatar(
               backgroundImage: AssetImage(
-                "assets/images/smile.png",
-                // "assets/images/akinyele-ib.jpg",
+                // "assets/images/smile.png",
+                "assets/images/akinyele-ib.jpg",
               ),
             ),
             decoration: BoxDecoration(
@@ -90,7 +91,12 @@ class _SideBarState extends State<SideBar> {
               color: Colors.white,
             ),
             title: myText("Sign Out"),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Register()),
+              );
+            },
           ),
         ],
       ),
