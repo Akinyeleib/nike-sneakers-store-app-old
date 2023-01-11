@@ -12,7 +12,6 @@ class LogIn extends StatefulWidget {
 }
 
 class _LogInState extends State<LogIn> {
-  final TextEditingController _nameContoller = TextEditingController();
   final TextEditingController _emailContoller = TextEditingController();
   final TextEditingController _passwordContoller = TextEditingController();
 

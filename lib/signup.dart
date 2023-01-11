@@ -219,7 +219,7 @@ class _RegisterState extends State<Register> {
                   InkWell(
                     onTap: () {},
                     child: Container(
-                      margin: const EdgeInsets.only(left: 20),
+                      margin: const EdgeInsets.only(left: 10),
                       child: const Text(
                         "Log In",
                         textAlign: TextAlign.center,
