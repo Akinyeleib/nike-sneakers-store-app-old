@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike_sneakers_store_app/edit_profile.dart';
 import 'package:nike_sneakers_store_app/signin.dart';
 
 import 'drawer.dart';
@@ -190,27 +191,36 @@ class _ProfileState extends State<Profile> {
               ),
               Column(
                 children: [
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
-                      width: double.infinity,
-                      padding: const EdgeInsets.all(15),
-                      margin: const EdgeInsets.only(top: 20),
-                      decoration: const BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                  Builder(builder: (context) {
+                    return InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const EditProfile(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(15),
+                        margin: const EdgeInsets.only(top: 20),
+                        decoration: const BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
+                        child: const Text(
+                          "Save Now",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                      child: const Text(
-                        "Save Now",
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
+                    );
+                  }),
                 ],
               ),
             ],
