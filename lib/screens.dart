@@ -22,7 +22,7 @@ class Onboard1 extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 20),
                     child: const Text(
-                      "WELCOME TO NIKE",
+                      "WELCOME TO \nNIKE",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Color(0xffECECEC),
