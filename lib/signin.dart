@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nike_sneakers_store_app/forgot_password.dart';
 
-import 'drawer.dart';
 import 'signup.dart';
 
 String img = "assets/images";

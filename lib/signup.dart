@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nike_sneakers_store_app/signin.dart';
 
-import 'drawer.dart';
-
 String img = "assets/images";
 
 class Register extends StatefulWidget {

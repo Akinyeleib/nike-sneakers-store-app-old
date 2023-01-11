@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nike_sneakers_store_app/signin.dart';
-
-import 'drawer.dart';
 import 'profile.dart';
 
 String img = "assets/images";

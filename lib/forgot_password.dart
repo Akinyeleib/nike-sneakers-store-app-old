@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'drawer.dart';
-
 String img = "assets/images";
 
 class ForgotPassword extends StatefulWidget {
