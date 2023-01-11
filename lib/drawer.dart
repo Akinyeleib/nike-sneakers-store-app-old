@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike_sneakers_store_app/profile.dart';
 import 'package:nike_sneakers_store_app/signup.dart';
 
 class SideBar extends StatefulWidget {
@@ -34,7 +35,12 @@ class _SideBarState extends State<SideBar> {
               color: Colors.white,
             ),
             title: myText("Profile"),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const Profile()),
+              );
+            },
           ),
           ListTile(
             leading: const Icon(
