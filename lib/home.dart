@@ -26,28 +26,6 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ElevatedButton(
-                onPressed: () {
-                  print("Tapped");
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => const Register()),
-                  // );
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Register(),
-                    ),
-                  );
-                },
-                child: const Text(
-                  "Sign In",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),
-                ),
-              ),
               InkWell(
                 child: Container(
                   width: double.infinity,

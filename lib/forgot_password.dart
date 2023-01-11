@@ -44,7 +44,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     ),
                   ),
                   const Text(
-                    "ForgotPassword Account",
+                    "Forgot Password",
                     style: TextStyle(
                       fontSize: 30,
                     ),

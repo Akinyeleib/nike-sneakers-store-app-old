@@ -27,11 +27,6 @@ class _RegisterState extends State<Register> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Home "),
-          centerTitle: true,
-        ),
-        drawer: SideBar(),
         body: Container(
           margin: const EdgeInsets.symmetric(
             vertical: 10,
