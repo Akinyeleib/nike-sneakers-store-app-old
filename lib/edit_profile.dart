@@ -97,11 +97,29 @@ class _EditProfileState extends State<EditProfile> {
                         padding: const EdgeInsets.all(15.0),
                         child: Text(
                           "$fname $lname",
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 20,
                           ),
                         ),
                       ),
+                      Builder(builder: (context) {
+                        return InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Profile()),
+                            );
+                          },
+                          child: const Text(
+                            "Change Profile Picture",
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.blue,
+                            ),
+                          ),
+                        );
+                      })
                     ],
                   ),
                 ),
