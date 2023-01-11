@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nike_sneakers_store_app/signin.dart';
 
 import 'drawer.dart';
+import 'forgot_password.dart';
 
 String img = "assets/images";
 
@@ -161,6 +162,27 @@ class _ProfileState extends State<Profile> {
                                 suffixIcon: Icon(Icons.no_encryption_outlined)),
                           ),
                         ),
+                        Builder(builder: (context) {
+                          return InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const ForgotPassword(),
+                                ),
+                              );
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  "Recovery Password",
+                                  textAlign: TextAlign.end,
+                                ),
+                              ],
+                            ),
+                          );
+                        }),
                       ],
                     ),
                   ),
