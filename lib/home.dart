@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:nike_sneakers_store_app/drawer.dart';
 import 'package:nike_sneakers_store_app/forgot_password.dart';
